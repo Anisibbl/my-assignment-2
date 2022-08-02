@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+a:link{
+  text-decoration: none!important;
+}
+
+img{
+    width: 100%;
+}
+
+.banner-section{
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.banner-area{
+  background: #161616;
+  border-radius: 30px;
+}
+ .banner-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.banner-text{
+  padding: 111px 0 111px 106px ;
+}
+.banner-text h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+color: #FFFFFF;
+}
+.banner-text p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+
+color: #FFFFFF;
+padding: 20px 0 30px 0;
+
+}
+.btn-1{
+background: #DD0000;
+border-radius: 5px;
+padding: 16px 25px;
+gap: 10px;
+width: 187px;
+height: 56px;
+left: 311px;
+top: 529px;
+color: #FFFFFF;
+}
+
+.banner-pic{
+    padding: 0px 79px 0 24px;
+    width: 581px;
+    height: 505px;
+    position: relative;
+    top: 103px;
+    transition: transform 2s linear;
+}
+.banner-pic img{
+  width: 100%;
+  height: 100%;
+}
+
+.section-part{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    margin-top: 130px;
+}
+
+.side-bar{
+  background: #161616;
+  border-radius: 10px;
+  width: 312px;
+  height: 312px;
+}
+.side-bar nav{
+  position: absolute;
+}
+.side-bar nav > ul{
+  padding: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.side-bar nav > ul .active{
+  
+  color: #161616;
+}
+.side-bar nav > ul li{
+  background: #FFFFFF;
+    border-radius: 10px;
+    padding: 17px 39px;
+    text-align: center;
+    margin: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.side-bar nav > ul li a{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+    text-transform: capitalize;
+}
+.side-bar nav > ul li:hover{
+  background-color: red;
+    transition: all .3s ease;
+}
+.side-bar nav > ul li:hover a{
+  color: #FFFFFF !important;
+  transition: all .3s linear;
+}
+
+
+.soccer-part{
+  grid-column: 2 / -1;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.live-soccer{
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+}
+.details{
+  padding: 15px;
+}
+
+.details button{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+  text-transform: capitalize;
+  padding: 4px;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.details button:hover{
+  background-color: #ef3c3c;
+  
+}
+
+.details p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #161616;
+  padding-top: 15px;
+}
+.icon{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+.icon span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+
+.footer-section{
+  background: #161616;
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+.footer-section p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 120px;
+  text-transform: uppercase;
+}
+  hr{
+      width: 900px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .footer-section span a{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #B9B9B9;
+      padding-top: 20px;
+      padding-right: 12px;
+  }
+
+
+
+
+
+  /* Upcoming Matches */
+
+#fixture{
+  padding-left: 24px;
+}
+
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+}
+.flag-img{
+    width: 252px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.countries {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match-info {
+  padding-top: 15px;
+}
+.match-info h3{
+  font-size: 20px;
+}
+
+.match-info p {
+  padding-top: 15px;
+}
+
+span {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+
+.social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon a{
+  color: white;
+  background-color: #000;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.social-icon a:hover{
+  color: darkolivegreen;
+  transition: all .3s linear;
+}
+
+
+
+/* Responsive css */
+
+
+
+/* Medium Devices */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    
+  .banner-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-text{
+    padding: 61px 0 61px 76px ;
+}
+.banner-text h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.banner-text p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.banner-pic .btn-1 {
+    font-size: 20px;
+    line-height: 23px;
+}
+.soccer-part {
+    padding: 18px 17px 0 12px;
+    width: 323px;
+    height: 340px;
+    position: relative;
+    top: 201px;
+    transition: transform 2s linear;
+}
+.soccer-part img {
+    width: 100%;
+    height: 100%;
+}
+.soccer-part:hover{
+    transform: translateX(20px);
+}
+
+  .side-bar {
+    display: grid;
+    grid-column: 1 / -1;
+    height: 15px;
+    width: 0;
+    margin-bottom: 100px;
+ }
+ .side-bar nav {
+    position: relative;
+ }
+ .side-bar nav > ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: -13px;
+ }
+
+ .side-bar nav > ul li {
+     height: 100px;
+     display: flex;
+     background: #FFFFFF;
+     border-radius: 10px;
+     padding: 17px 39px;
+     text-align: center;
+     margin: 30px;
+     cursor: pointer;
+     justify-content: center;
+     align-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+     border: 1px solid #E8E8E8;
+ }
+
+
+ .soccer-part{
+     grid-column: 1 / -1;
+     gap: 20px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+ .details button {
+     font-size: 18.3077px;
+     line-height: 27px;
+ }
+
+ .details p {
+     font-size: 20px;
+     line-height: 30px;
+ }
+ .match-news .match-right .single-match .match-time-icon span {
+     font-size: 18.3077px;
+     line-height: 30px;
+ }
+
+ .icon {
+     justify-content: left;
+ }
+ .clock{
+     margin-left: 15px;
+     margin-right: 20px;
+ }
+ 
+
+ .footer-area{    
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+ .footer-area span{
+     padding-top: 10px;
+ } 
+
+
+ .social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon a{
+  color: white;
+  background-color: #000;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.social-icon a:hover{
+  color: darkolivegreen;
+  transition: all .3s linear;
+}
+
+
+}
+
+
+
+/*  Small Devices */
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .container {
+      width: 100%;
+  }
+  
+  .banner-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .banner-text{
+      grid-column: 1 / -1;
+      padding: 28px 38px 0 38px ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .banner-text p{
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: green;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: justify;
+  }
+  .section-part {
+      margin-top: 24px;
+  }
+  .side-bar nav > ul li {
+      border: 1px solid #E8E8E8;
+  }
+  .banner-text h1 {
+      text-align: center;
+      font-size: 45px;
+      line-height: 50px;
+  }
+ 
+
+
+  .banner-pic {
+      width: 233px;
+      transform: translate(-50%, -50%);
+      height: 245px;
+      padding: 0;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% -50%);
+  }
+  .banner-pic img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .banner-pic .btn-1{
+      display: grid;
+      grid-column: 1 / -1;
+      width: 200px;
+      margin: 0 auto;
+      visibility: visible;
+      display: none;
+  }
+
+  .soccer-part{
+      display: flex;
+      gap: 24px;
+      margin-top: 130px;
+      flex-direction: column;
+      align-items: center;
+  }
+  .side-bar {
+      background: #FFFFFF;
+  }
+
+  .soccer-part {
+      grid-column: 1 / -1;
+      gap: 24px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      display: grid;
+  }
+
+
+  .footer-section {
+      display: grid;
+      gap: 20px;
+      background: #161616;
+      text-align: center;
+      margin-top: 139px;
+      padding-bottom: 139px;
+      justify-content: center;
+  }
+}
+
+
